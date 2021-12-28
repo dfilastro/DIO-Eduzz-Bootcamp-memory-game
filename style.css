@@ -1,19 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  font-family: "Press Start 2P", sans-serif;
+}
+
 body {
   margin: 0;
   background-color: rgb(26, 26, 26);
+  font-family: "Press Start 2P", sans-serif;
 }
 
-.scores {
+.scores,
+.record {
   display: flex;
   color: white;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+}
+
+.general-panel {
+  display: flex;
 }
 
 .main-game {
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .genius {
@@ -23,7 +42,7 @@ body {
     "yellow blue";
   grid-gap: 30px;
   border: 30px solid rgb(8, 8, 8);
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(50, 50, 50);
   border-radius: 100%;
   width: 700px;
   height: 700px;
@@ -76,4 +95,24 @@ body {
 
 .selected {
   opacity: 0.2;
+}
+
+.btn {
+  align-items: center;
+  position: absolute;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  background-color: #eee;
+  color: #222;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.footer,
+.header {
+  color: white;
+  text-align: center;
 }
